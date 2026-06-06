@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.diceContainer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 18px;
+}
+
+.die {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: white;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+
+    
+}
+
+.roll {
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    white-space: nowrap;
+    width: auto;
+
+    padding: 6px 12px;
+
+    font-size: 1.8rem;
+    font-family: serif;
+
+    color: aliceblue;
+
+    margin-top: 25px;
+
+
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.instructions {
+    text-align: center;
+}
